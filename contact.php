@@ -1,13 +1,11 @@
 <?php
-$field_Fname = $_POST['firstname'];
-$field_Sname = $_POST['lastname'];
-$field_email = $_POST['email'];
-$field_message = $_POST['subject'];
+
+$field_email = $_POST['_replyto'];
+$field_message = $_POST['message'];
 
 $mail_to = 'contact@charalambosioannou.com';
-$subject = 'Message from a site visitor '.$field_name;
+$subject = 'Contact request from personal website'.$field_name;
 
-$body_message = 'From: '.$field_Fname.' '.$field_Sname. "\n";
 $body_message .= 'E-mail: '.$field_email."\n";
 $body_message .= 'Message: '.$field_message;
 
